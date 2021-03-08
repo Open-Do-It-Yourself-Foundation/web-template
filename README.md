@@ -1,2 +1,2 @@
-# web-template
+# Web-template
 Web template
