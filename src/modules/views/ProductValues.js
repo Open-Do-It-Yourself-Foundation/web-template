@@ -4,6 +4,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import productCurvyLines from "../../templates/productCurvyLines.png";
+import productValues1 from "../../templates/productValues1.svg";
+import productValues2 from "../../templates/productValues2.svg";
+import productValues3 from "../../templates/productValues3.svg";
 
 const styles = (theme) => ({
   root: {
@@ -44,7 +48,7 @@ function ProductValues(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/productCurvyLines.png"
+          src={productCurvyLines}
           className={classes.curvyLines}
           alt="curvy lines"
         />
@@ -53,7 +57,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/productValues1.svg"
+                src={productValues1}
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
@@ -69,7 +73,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="productValues2.svg"
+                src={productValues2}
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
@@ -85,7 +89,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/productValues3.svg"
+                src={productValues3}
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>

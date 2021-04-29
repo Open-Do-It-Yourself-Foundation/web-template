@@ -5,6 +5,8 @@ import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import { Link } from "react-router-dom";
+import appFooterFacebook from "../../templates/appFooterFacebook.png"
+import appFooterTwitter from "../../templates/appFooterTwitter.png"
 
 function Copyright() {
   return (
@@ -89,10 +91,10 @@ export default function AppFooter() {
             >
               <Grid item className={classes.icons}>
                 <a href="https://material-ui.com/" className={classes.icon}>
-                  <img src="/appFooterFacebook.png" alt="Facebook" />
+                  <img src={appFooterFacebook} alt="Facebook" />
                 </a>
                 <a href="https://twitter.com/MaterialUI" className={classes.icon}>
-                  <img src="/appFooterTwitter.png" alt="Twitter" />
+                  <img src={appFooterTwitter} alt="Twitter" />
                 </a>
               </Grid>
               <Grid item>

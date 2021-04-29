@@ -6,6 +6,11 @@ import Container from '@material-ui/core/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import { Link } from "react-router-dom";
+import productCurvyLines from "../../templates/productCurvyLines.png";
+import productHowItWorks1 from "../../templates/productHowItWorks1.svg";
+import productHowItWorks2 from "../../templates/productHowItWorks2.svg";
+import productHowItWorks3 from "../../templates/productHowItWorks3.svg";
+
 
 const styles = (theme) => ({
   root: {
@@ -59,7 +64,7 @@ function ProductHowItWorks(props) {
     <section className={classes.root}>
       <Container className={classes.container}>
         <img
-          src="/productCurvyLines.png"
+          src={productCurvyLines}
           className={classes.curvyLines}
           alt="curvy lines"
         />
@@ -72,7 +77,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>1.</div>
                 <img
-                  src="/productHowItWorks1.svg"
+                  src={productHowItWorks1}
                   alt="suitcase"
                   className={classes.image}
                 />
@@ -85,7 +90,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>2.</div>
                 <img
-                  src="/productHowItWorks2.svg"
+                  src={productHowItWorks2}
                   alt="graph"
                   className={classes.image}
                 />
@@ -98,7 +103,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>3.</div>
                 <img
-                  src="/productHowItWorks3.svg"
+                  src={productHowItWorks3}
                   alt="clock"
                   className={classes.image}
                 />
